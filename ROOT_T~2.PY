@@ -75,15 +75,6 @@ for isVal in extrema:
     isIndex = np.searchsorted(roots, isVal, side='left') - 1
     print(isVal, roots[isIndex], roots[isIndex + 1], myFunc(isVal))
 
-for j in range(3, k):
-    n = int(m.pow(10, j))
-    for i in range(1, n):
-        x = (random.random()) * a + roots[isIndex]
-        y = (random.random()) * b
-        nShots = nShots + 1
-        if isTreffer(y, x):
-            nHits = nHits + 1
-    myInt = nHits / nShots * a * b
     
     
     
